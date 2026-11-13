@@ -1116,3 +1116,92 @@ body, html {
     bottom: -26px;
   }
 }
+/* ==================== FINAL MOBILE FIXES ==================== */
+@media (max-width: 768px) {
+
+  /* 1. FIX SLIDE CARD LEFT & RIGHT ARROWS SO THEY ARE 100% VISIBLE */
+  .deck-stage {
+    width: 86vw !important;
+    height: min(490px, 68dvh) !important;
+    margin-bottom: 36px !important; /* Keeps card clear of the bottom menu bar */
+  }
+
+  .prev-arrow {
+    left: 4px !important; /* Pulls left button inside the screen edge */
+    top: 50% !important;
+  }
+
+  .next-arrow {
+    right: 4px !important; /* Pulls right button inside the screen edge */
+    top: 50% !important;
+  }
+
+  .close-btn {
+    top: -10px !important;
+    right: 0px !important;
+  }
+
+  /* 2. FIX HOME PAGE TEXT BOX (WIDEN TEXT AREA SO NOTHING GETS CUT OFF) */
+  .intro-stage {
+    top: 3% !important;
+    width: 94vw !important;
+  }
+
+  .intro-chat-box {
+    width: 100% !important;
+    height: 330px !important;
+    /* Smaller side padding (32px instead of 115px) so text uses the full oval width */
+    padding: 42px 32px 46px 32px !important;
+    align-items: center !important;
+  }
+
+  .typewriter-text {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: 0.76rem !important;
+    line-height: 1.42 !important;
+    text-align: center !important;
+  }
+
+  /* Keep "Click here to continue!" in the exact spot that works */
+  .intro-continue-box {
+    top: 62% !important;
+    bottom: auto !important;
+    width: 82vw !important;
+    min-height: 92px !important;
+  }
+
+  /* 3. FIX PAINTINGS & RIBBON LABELS ON THE WALL */
+  .gallery-item {
+    width: 34vw !important;
+    max-width: 132px !important;
+  }
+
+  .painting-img {
+    width: 100% !important;
+    max-height: 13vh !important;
+    object-fit: contain !important;
+  }
+
+  .label-plaque {
+    width: 40vw !important;
+    max-width: 152px !important;
+    height: 34px !important;
+    margin-top: 2px !important;
+    padding: 0 8px !important;
+  }
+
+  .label-text {
+    font-size: 0.85rem !important;
+    white-space: nowrap !important; /* Keeps "My Feelings" & "Skills Gained" on 1 neat line */
+  }
+
+  /* Clean 2 - 2 - 1 Gallery Layout on Mobile */
+  .item-1 { top: 3% !important; left: 9% !important; }
+  .item-2 { top: 3% !important; left: 55% !important; }
+
+  .item-3 { top: 26% !important; left: 9% !important; }
+  .item-4 { top: 26% !important; left: 55% !important; }
+
+  .item-5 { top: 49% !important; left: 32% !important; }
+}
